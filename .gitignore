@@ -17,7 +17,9 @@
 .env.development.local
 .env.test.local
 .env.production.local
-
+/workspace.code-workspace
+/workspace1.code-workspace
+/public\assets\niu*
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
