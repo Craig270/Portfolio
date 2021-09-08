@@ -1,7 +1,24 @@
 import React from "react";
 import "./intro.scss";
 import ArrowDownwardIcon from "@material-ui/icons/ArrowDownward";
-export default function intro() {
+import { init } from "ityped";
+import { useEffect, useRef } from "react";
+
+export default function Intro() {
+  const textRef = useRef();
+
+  useEffect(() => {
+    init(textRef.current, {
+      backDelay: 1500,
+      strings: [
+        "Web Developer.",
+        "Cloud Architect.",
+        "Software Developer.",
+        "Person.",
+      ],
+      loop: true,
+    });
+  }, []);
   return (
     <div className="intro" id="intro">
       <div className="left">
@@ -14,7 +31,7 @@ export default function intro() {
           <h2>Hi there I'm </h2>
           <h1>Craig Neff!</h1>
           <h3>
-            Web Application and Cloud Development!<span></span>
+            Striving to be a better <span ref={textRef}></span>
           </h3>
         </div>
         <a href="#portfolio">
