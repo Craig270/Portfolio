@@ -3,12 +3,26 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 
+  .arrow {
+    height: 90px;
+    position: absolute;
+    cursor: pointer;
+    &.left {
+      left: 250px;
+      transform: rotate(180deg);
+    }
+
+    &.right {
+      right: 250px;
+    }
+  }
   .slider {
     height: 350px;
     display: flex;
     position: absolute;
-    left: 0;
+    left: -100vw;
     .container {
       width: 100vw;
       display: flex;
@@ -71,6 +85,12 @@
           display: flex;
           justify-content: center;
           align-items: center;
+
+          img {
+            width: 400px;
+            height: 250px;
+            transform: rotate(-10deg);
+          }
         }
       }
     }
