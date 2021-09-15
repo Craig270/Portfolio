@@ -6,8 +6,8 @@ export default function Testimonials() {
       <h1>Testimonials</h1>
       <div className="card">
         <div className="top">
-          <img src=""
-        </div>
+          <img src="'somePhoto" />
+      
         <div className="center"></div>
         <div className="bottom"></div>
       </div>
