@@ -8,6 +8,10 @@
 
   h1 {
     font-size: 50px;
+
+    @include mobile {
+      font-size: 20px;
+    }
   }
 
   .container {
@@ -16,6 +20,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @include mobile {
+      flex-direction: column;
+    }
 
     .card {
       width: 250px;
@@ -27,6 +35,10 @@
       justify-content: space-around;
       padding: 20px;
       transition: all 1s ease;
+
+      @include mobile {
+        height: 180px;
+      }
 
       &.featured {
         width: 300px;
